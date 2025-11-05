@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f8f8;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: #f8f8f8;
+  color: #131010;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+header h1 {
+  font-size: 16px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.logo-navbar {
+  gap: 10px;
+}
+
+nav ul li {
+  margin-left: 55px;
+}
+nav ul li a {
+  color: #131010;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.hero {
+  height: 90vh;
+  background: #543a14 center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero-left {
+  flex: 1;
+  margin: 50px;
+  text-align: left;
+}
+
+.hero-left h2 {
+  font-size: 48px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.hero-left p {
+  font-size: 18px;
+  text-align: left;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.hero-left button {
+  padding: 8px 16px;
+  background: #f0bb78;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.hero-left button:hover {
+  background-color: #d49b56;
+}
+
+.hero-right img {
+  height: 90vh;
+}
+
+.landing-page {
+  position: relative;
+  margin-top: 70px;
+  width: 1040px;
+  height: 1000px;
+  margin-left: 120px;
+}
+
+.landing-page .populer-minggu-ini {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  text-align: left;
+  font-size: 2em;
+}
+
+.landing-page .angklung {
+  background-color: transparent;
+  height: 505px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 347px;
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+
+.landing-page .angklung:hover {
+  filter: grayscale(0%);
+}
+
+.landing-page .rebab {
+  background-color: transparent;
+  border-radius: 10px;
+  height: 240px;
+  left: 372px;
+  position: absolute;
+  top: 0px;
+  width: 325px;
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+.landing-page .rebab:hover {
+  filter: grayscale(0%);
+}
+
+.landing-page .gamelan {
+  background-color: transparent;
+  height: 240px;
+  left: 722px;
+  position: absolute;
+  top: 0px;
+  width: 325px;
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+.landing-page .gamelan:hover {
+  filter: grayscale(0%);
+}
+
+.landing-page .tifa {
+  background-color: transparent;
+  height: 240px;
+  left: 372px;
+  position: absolute;
+  top: 265px;
+  width: 675px;
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+.landing-page .tifa:hover {
+  filter: grayscale(0%);
+}
+
+.landing-page .kolintang {
+  background-color: transparent;
+  height: 441px;
+  left: 0px;
+  position: absolute;
+  top: 525px;
+  width: 516px;
+  transition: 0.5s;
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+.landing-page .kolintang:hover {
+  filter: grayscale(0%);
+}
+
+.landing-page .sape {
+  background-color: transparent;
+  height: 208px;
+  left: 541px;
+  position: absolute;
+  top: 525px;
+  width: 507px;
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+.landing-page .sape:hover {
+  filter: grayscale(0%);
+}
+
+.landing-page .gambus {
+  background-color: transparent;
+  height: 208px;
+  left: 541px;
+  position: absolute;
+  top: 753px;
+  width: 507px;
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+.landing-page .gambus:hover {
+  filter: grayscale(0%);
+}
+
+.landing-page .gambar-tifa,
+.landing-page .gambar-gamelan,
+.landing-page .gambar-rebab,
+.landing-page .gambar-angklung,
+.landing-page .gambar-gambus,
+.landing-page .gambar-sape,
+.landing-page .gambar-kolintang {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  border-radius: 2%;
+}
+
+.landing-page .frame-10 {
+  background-color: transparent;
+  cursor: pointer;
+  height: 505px;
+  left: 196px;
+  position: absolute;
+  top: 1462px;
+  width: 347px;
+}
+.landing-page .gambar-gamelan {
+  cursor: pointer;
+}
+.landing-page .rebab {
+  border-radius: 10px;
+}
+.section {
+  padding: 60px 50px;
+  text-align: center;
+}
+
+.section h3 {
+  font-size: 28px;
+  text-align: left;
+  margin: 25px 75px;
+}
+
+.section h4 {
+  font-size: 20px;
+}
+
+.section p {
+  max-width: 700px;
+  margin: 10px auto;
+}
+
+.populer-top {
+  display: flex;
+  align-items: center;
+}
+
+.pelajari-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.pelajari-card {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 10px;
+  max-width: 1000px;
+  max-height: 175px;
+  margin: 0 auto;
+}
+
+.pelajari-left img {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.pelajari-right {
+  text-align: left;
+  margin: 10px 20px;
+}
+
+.footer {
+  background-color: #543a14;
+  color: #f8f8f8;
+  padding: 50px 10%;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+}
+
+.footer .logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footer .logo img {
+  width: 28px;
+  margin-right: 10px;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #e5e5e5;
+  max-width: 320px;
+}
+
+.footer-section.nav h3 {
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footer-section.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  row-gap: 1px;
+  margin-bottom: 20px;
+}
+
+.footer-section.nav li {
+  margin-bottom: 8px;
+}
+
+.footer-section.nav a {
+  color: #f8f8f8;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section.social h3 {
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footer-section.social .icons a {
+  color: #f8f8f8;
+  margin-right: 15px;
+  font-size: 1.3rem;
+  transition: color 0.3s;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #f3f3f3;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.footer-bottom p {
+  max-width: none;
+  text-align: center;
+  margin: 0 auto;
+}
+
+footer hr {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  margin: 20px auto;
+  width: 90%;
+}
+
+.footer-bottom .heart {
+  color: #ef4444;
+  text-align: center;
+}
+
+.coklat {
+  color: #543a14;
+}
