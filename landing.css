@@ -19,6 +19,7 @@ header {
   align-items: center;
   position: sticky;
   top: 0;
+  z-index: 2001;
 }
 
 header h1 {
@@ -102,6 +103,8 @@ nav ul li a {
   width: 1040px;
   height: 1000px;
   margin-left: 120px;
+  z-index: 1000;
+  top: 0;
 }
 
 .landing-page .populer-minggu-ini {
@@ -111,13 +114,15 @@ nav ul li a {
   width: 100%;
   text-align: left;
   font-size: 2em;
+  font-weight: bold;
+  z-index: 200;
 }
 
 .landing-page .angklung {
   background-color: transparent;
   height: 505px;
   left: 0px;
-  position: absolute;
+  position: relative;
   top: 0px;
   width: 347px;
   filter: grayscale(100%);
@@ -138,6 +143,7 @@ nav ul li a {
   width: 325px;
   filter: grayscale(100%);
   transition: 0.5s;
+  z-index: 1;
 }
 .landing-page .rebab:hover {
   filter: grayscale(0%);
@@ -221,11 +227,9 @@ nav ul li a {
 .landing-page .gambar-gambus,
 .landing-page .gambar-sape,
 .landing-page .gambar-kolintang {
-  background-color: transparent;
   height: 100%;
   left: 0px;
   object-fit: cover;
-  position: absolute;
   top: 0px;
   width: 100%;
   border-radius: 2%;

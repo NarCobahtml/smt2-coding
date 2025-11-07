@@ -48,51 +48,54 @@ nav ul li a {
 
 .hero {
   height: 50vh;
-  background: linear-gradient(to bottom, #f8f8f8, #f5e3cc);
-
+  background: url("gmbr_kontenbljr/Gambar Angklung.png") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: white;
   text-align: center;
-  padding: 0 20px;
-  flex-direction: column;
-}
-.hero h2 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-.hero p {
-  font-size: 18px;
-}
-.hero button {
-  padding: 12px 25px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  color: #fff;
-  font-size: 16px;
-  transition: 0.3s;
 }
 
-.section {
-  padding: 60px 50px;
+.nama {
+  margin-top: 50px;
+  margin-bottom: 30px;
   text-align: center;
 }
-.section h3 {
-  font-size: 28px;
-  margin-bottom: 20px;
+.nama hr {
+  width: 300px;
+  margin: 0 auto;
 }
-.section p {
-  max-width: 700px;
-  margin: 0 auto 40px;
-}
-.container {
-  max-width: 900px;
-  margin: 40px auto;
+
+.konten {
+  padding: 50px 10%;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 40px;
+}
+.gambar1,
+.gambar2 {
+  justify-content: center;
+  text-align: center;
+}
+.tengah {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.tengah h1 {
+  margin-bottom: 20px;
+}
+
+.suara-angklung .audio-wrapper {
+  width: 953px;
+  margin: 10px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.suara-angklung .audio-wrapper audio {
+  display: block;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
