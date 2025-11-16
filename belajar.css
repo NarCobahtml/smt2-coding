@@ -191,22 +191,6 @@ nav ul li a {
   background-color: #f59e0b;
 }
 
-@media (max-width: 768px) {
-  .card {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .card img {
-    width: 100%;
-    margin-bottom: 15px;
-  }
-
-  .card-content {
-    width: 100%;
-  }
-}
-
 .footer {
   background-color: #543a14;
   color: #f8f8f8;
@@ -311,4 +295,129 @@ footer hr {
 
 .coklat {
   color: #543a14;
+}
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .card-content {
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  header {
+    padding: 18px 36px;
+  }
+  .hero {
+    height: 48vh;
+  }
+  .container {
+    max-width: 760px;
+    gap: 22px;
+  }
+  .card {
+    padding: 16px;
+  }
+  .card img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 992px) {
+  header {
+    padding: 14px 28px;
+  }
+  .hero {
+    height: 44vh;
+  }
+  .hero h2 {
+    font-size: 40px;
+  }
+  .container {
+    margin: 24px auto;
+    padding: 0 16px;
+  }
+  .card {
+    max-width: 100%;
+  }
+  .card img {
+    width: 45%;
+    height: 160px;
+  }
+  .card-content {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 38vh;
+  }
+  .hero h2 {
+    font-size: 32px;
+  }
+  .container {
+    margin: 20px auto;
+    padding: 0 6%;
+    gap: 20px;
+  }
+  .card {
+    flex-direction: column;
+    padding: 14px;
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+  }
+  .card-content {
+    width: 100%;
+  }
+  .cta {
+    padding: 22px 12px;
+    height: auto;
+  }
+  .btn {
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px 12px;
+  }
+  .hero {
+    height: 32vh;
+  }
+  .hero h2 {
+    font-size: 24px;
+  }
+  .container {
+    padding: 0 4%;
+  }
+  .card {
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .card h3 {
+    font-size: 1rem;
+  }
+  .card p {
+    font-size: 0.85rem;
+  }
+  .btn {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+  .cta {
+    padding: 18px 10px;
+    height: auto;
+  }
 }

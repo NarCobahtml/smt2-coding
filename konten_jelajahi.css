@@ -23,7 +23,7 @@ header {
 header h1 {
   font-size: 16px;
 }
-header ul {
+ul {
   list-style: none;
   display: flex;
   align-items: center;
@@ -48,98 +48,72 @@ nav ul li a {
 
 .hero {
   height: 50vh;
-  background: linear-gradient(to bottom, #f8f8f8, #f5e3cc);
-
+  background: url("gmbr_kontenjljh/heroKarawitan.png") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: white;
   text-align: center;
-  padding: 0 20px;
-  flex-direction: column;
 }
-.hero h2 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-.isi {
+
+.nama {
   margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
 }
-.Cerita {
-  margin-left: 20px;
-}
-
-.Cerita ul {
-  list-style: none;
-  padding: 0;
+.nama hr {
+  width: 300px;
+  margin: 0 auto;
 }
 
-#horizontal {
+.konten {
+  margin-left: 170px;
+  margin-top: 50px;
+  margin-bottom: 86px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.konten h2 {
+  margin-bottom: 15px;
+}
+
+.instrumen-container {
   display: flex;
   gap: 20px;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 15px;
 }
 
-#horizontal img {
-  display: block;
-  margin: 0 auto;
-  width: 400px;
-  height: auto;
-  align-self: center;
+.chip {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 100px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+
+.galeri-karawitan ul {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.galeri-karawitan .gambar1 img,
+.galeri-karawitan .gambar2 img,
+.galeri-karawitan .gambar3 img {
   border-radius: 10px;
 }
 
-.daftar-fitur {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
-  margin: 60px auto;
-  max-width: 1000px;
-  width: 90%;
-}
-
-.fitur {
-  background: #fff;
-  border: 1px solid #eee;
-  border-radius: 15px;
-  padding: 20px 25px;
-  display: flex;
-  align-items: flex-start;
-  gap: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.fitur:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-}
-
-.ikon {
-  background-color: #f5eee9;
-  color: #8b6b4f;
-  font-size: 22px;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.teks h3 {
-  font-size: 17px;
-  font-weight: 700;
-  margin: 0 0 8px 0;
-  color: #1a1a1a;
-}
-
-.teks p {
-  font-size: 14px;
-  color: #555;
-  line-height: 1.5;
-  margin: 0;
+@media (max-width: 768px) {
+  .konten {
+    padding: 20px 5%;
+  }
 }
 .footer {
   background-color: #543a14;
@@ -147,6 +121,7 @@ nav ul li a {
   padding: 50px 10%;
   font-family: "Poppins", sans-serif;
 }
+
 .footer-container {
   display: flex;
   justify-content: space-between;
@@ -246,16 +221,20 @@ footer hr {
   color: #543a14;
 }
 
+/* ----------------------------
+   Responsive overrides
+   Keep base styles above unchanged; these rules only adapt layout
+   for smaller viewports (tablet and mobile).
+   ---------------------------- */
+
 @media (max-width: 1200px) {
+  .konten {
+    margin-left: 100px;
+    gap: 48px;
+  }
+
   header {
     padding: 18px 36px;
-  }
-  .hero {
-    height: 45vh;
-  }
-  .daftar-fitur {
-    gap: 20px;
-    max-width: 900px;
   }
 }
 
@@ -263,25 +242,27 @@ footer hr {
   header {
     padding: 14px 28px;
   }
+
   nav ul li {
-    margin-left: 28px;
+    margin-left: 28px; /* reduce navbar spacing */
   }
+
+  .konten {
+    margin-left: 60px;
+    gap: 40px;
+  }
+
   .hero {
-    height: 42vh;
+    height: 45vh;
+    padding: 0 16px;
   }
-  .hero h2 {
-    font-size: 40px;
+
+  .instrument-container {
+    justify-content: center; /* center chips on narrower screens */
   }
-  .daftar-fitur {
-    grid-template-columns: 1fr;
-    gap: 18px;
-    max-width: 700px;
-  }
-  #horizontal {
-    flex-wrap: wrap;
-  }
-  #horizontal img {
-    width: 350px;
+
+  .galeri-karawitan ul {
+    gap: 16px;
   }
 }
 
@@ -289,48 +270,47 @@ footer hr {
   header {
     padding: 12px 18px;
   }
+
   nav ul li {
     margin-left: 14px;
     font-size: 14px;
   }
-  .hero {
-    height: 38vh;
+
+  .konten {
+    margin-left: 0; /* use full width on small screens */
+    padding: 0 5%;
+    gap: 28px;
   }
+
+  .hero {
+    height: 40vh;
+  }
+
   .hero h2 {
     font-size: 32px;
   }
-  .Cerita {
-    margin-left: 0;
-    padding: 0 4%;
-  }
-  #horizontal {
+
+  .instrument-container {
     justify-content: center;
-    gap: 16px;
-    flex-wrap: wrap;
+    gap: 8px;
   }
-  #horizontal img {
-    width: 280px;
-    max-width: 90%;
-  }
-  .daftar-fitur {
-    gap: 16px;
-    padding: 0 4%;
-    margin: 40px auto;
-  }
-  .fitur {
-    padding: 16px 20px;
-    gap: 12px;
-  }
-  .ikon {
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
-  }
-  .teks h3 {
-    font-size: 15px;
-  }
-  .teks p {
+
+  .instrument-container .chip {
+    padding: 6px 12px;
     font-size: 13px;
+  }
+
+  .galeri-karawitan ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .galeri-karawitan .gambar1 img,
+  .galeri-karawitan .gambar2 img,
+  .galeri-karawitan .gambar3 img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -338,51 +318,22 @@ footer hr {
   header {
     padding: 10px 12px;
   }
-  header h1 {
-    font-size: 14px;
-  }
-  nav ul li {
-    margin-left: 8px;
-    font-size: 12px;
-  }
-  .hero {
-    height: 32vh;
-  }
+
   .hero h2 {
     font-size: 24px;
-    margin-bottom: 10px;
   }
-  .Cerita {
-    margin-left: 0;
-    padding: 0 3%;
+
+  .konten {
+    padding: 0 4%;
+    gap: 20px;
   }
-  #horizontal {
-    gap: 12px;
-    margin-top: 20px;
+
+  .instrument-container {
+    gap: 8px;
   }
-  #horizontal img {
-    width: 200px;
-    max-width: 100%;
-    height: auto;
-  }
-  .daftar-fitur {
-    gap: 12px;
-    padding: 0 3%;
-    margin: 30px auto;
-  }
-  .fitur {
-    padding: 12px 15px;
-    gap: 10px;
-  }
-  .ikon {
-    width: 36px;
-    height: 36px;
-    font-size: 16px;
-  }
-  .teks h3 {
-    font-size: 14px;
-  }
-  .teks p {
-    font-size: 12px;
+
+  .chip {
+    padding: 6px 10px;
+    font-size: 13px;
   }
 }
