@@ -246,58 +246,61 @@ footer hr {
   color: #543a14;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 75rem) {
+  /* 1200px breakpoint */
   header {
-    padding: 18px 36px;
+    padding: 1.125rem 2.25rem; /* 18px 36px */
   }
   .hero {
     height: 45vh;
   }
   .daftar-fitur {
-    gap: 20px;
-    max-width: 900px;
+    gap: 1.25rem; /* 20px */
+    max-width: 56.25rem; /* 900px */
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 62rem) {
+  /* 992px breakpoint */
   header {
-    padding: 14px 28px;
+    padding: 0.875rem 1.75rem; /* 14px 28px */
   }
   nav ul li {
-    margin-left: 28px;
+    margin-left: 1.75rem; /* 28px */
   }
   .hero {
     height: 42vh;
   }
   .hero h2 {
-    font-size: 40px;
+    font-size: 2.5rem; /* 40px */
   }
   .daftar-fitur {
     grid-template-columns: 1fr;
-    gap: 18px;
-    max-width: 700px;
+    gap: 1.125rem; /* 18px */
+    max-width: 43.75rem; /* 700px */
   }
   #horizontal {
     flex-wrap: wrap;
   }
   #horizontal img {
-    width: 350px;
+    width: 21.875rem; /* 350px */
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
+  /* 768px breakpoint */
   header {
-    padding: 12px 18px;
+    padding: 0.75rem 1.125rem; /* 12px 18px */
   }
   nav ul li {
-    margin-left: 14px;
-    font-size: 14px;
+    margin-left: 0.875rem; /* 14px */
+    font-size: 0.875rem; /* 14px */
   }
   .hero {
     height: 38vh;
   }
   .hero h2 {
-    font-size: 32px;
+    font-size: 2rem; /* 32px */
   }
   .Cerita {
     margin-left: 0;
@@ -305,84 +308,85 @@ footer hr {
   }
   #horizontal {
     justify-content: center;
-    gap: 16px;
+    gap: 1rem; /* 16px */
     flex-wrap: wrap;
   }
   #horizontal img {
-    width: 280px;
+    width: 17.5rem; /* 280px */
     max-width: 90%;
   }
   .daftar-fitur {
-    gap: 16px;
+    gap: 1rem; /* 16px */
     padding: 0 4%;
-    margin: 40px auto;
+    margin: 2.5rem auto; /* 40px */
   }
   .fitur {
-    padding: 16px 20px;
-    gap: 12px;
+    padding: 1rem 1.25rem; /* 16px 20px */
+    gap: 0.75rem; /* 12px */
   }
   .ikon {
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
+    width: 2.5rem; /* 40px */
+    height: 2.5rem;
+    font-size: 1.125rem; /* 18px */
   }
   .teks h3 {
-    font-size: 15px;
+    font-size: 0.9375rem; /* 15px */
   }
   .teks p {
-    font-size: 13px;
+    font-size: 0.8125rem; /* 13px */
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 30rem) {
+  /* 480px breakpoint - mobile */
   header {
-    padding: 10px 12px;
+    padding: 0.625rem 0.75rem; /* 10px 12px */
   }
   header h1 {
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px */
   }
   nav ul li {
-    margin-left: 8px;
-    font-size: 12px;
+    margin-left: 0.5rem; /* 8px */
+    font-size: 0.75rem; /* 12px */
   }
   .hero {
     height: 32vh;
   }
   .hero h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 1.5rem; /* 24px */
+    margin-bottom: 0.625rem; /* 10px */
   }
   .Cerita {
     margin-left: 0;
     padding: 0 3%;
   }
   #horizontal {
-    gap: 12px;
-    margin-top: 20px;
+    gap: 0.75rem; /* 12px */
+    margin-top: 1.25rem; /* 20px */
   }
   #horizontal img {
-    width: 200px;
+    width: 12.5rem; /* 200px */
     max-width: 100%;
     height: auto;
   }
   .daftar-fitur {
-    gap: 12px;
+    gap: 0.75rem; /* 12px */
     padding: 0 3%;
-    margin: 30px auto;
+    margin: 1.875rem auto; /* 30px */
   }
   .fitur {
-    padding: 12px 15px;
-    gap: 10px;
+    padding: 0.75rem 0.9375rem; /* 12px 15px */
+    gap: 0.625rem; /* 10px */
   }
   .ikon {
-    width: 36px;
-    height: 36px;
-    font-size: 16px;
+    width: 2.25rem; /* 36px */
+    height: 2.25rem;
+    font-size: 1rem; /* 16px */
   }
   .teks h3 {
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px */
   }
   .teks p {
-    font-size: 12px;
+    font-size: 0.75rem; /* 12px */
   }
 }

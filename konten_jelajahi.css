@@ -221,65 +221,62 @@ footer hr {
   color: #543a14;
 }
 
-/* ----------------------------
-   Responsive overrides
-   Keep base styles above unchanged; these rules only adapt layout
-   for smaller viewports (tablet and mobile).
-   ---------------------------- */
-
-@media (max-width: 1200px) {
+@media (max-width: 75rem) {
+  /* 1200px breakpoint */
   .konten {
-    margin-left: 100px;
-    gap: 48px;
+    margin-left: 6.25rem; /* 100px */
+    gap: 3rem; /* 48px */
   }
 
   header {
-    padding: 18px 36px;
+    padding: 1.125rem 2.25rem; /* 18px 36px */
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 62rem) {
+  /* 992px breakpoint */
   header {
-    padding: 14px 28px;
+    padding: 0.875rem 1.75rem; /* 14px 28px */
   }
 
   nav ul li {
-    margin-left: 28px; /* reduce navbar spacing */
+    margin-left: 1.75rem; /* 28px */
   }
 
   .konten {
-    margin-left: 60px;
-    gap: 40px;
+    margin-left: 3.75rem; /* 60px */
+    gap: 2.5rem; /* 40px */
   }
 
   .hero {
     height: 45vh;
-    padding: 0 16px;
+    padding: 0 1rem; /* 16px */
   }
 
   .instrument-container {
-    justify-content: center; /* center chips on narrower screens */
+    justify-content: center;
   }
 
   .galeri-karawitan ul {
-    gap: 16px;
+    gap: 1rem; /* 16px */
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
+  /* 768px breakpoint */
   header {
-    padding: 12px 18px;
+    padding: 0.75rem 1.125rem; /* 12px 18px */
   }
 
   nav ul li {
-    margin-left: 14px;
-    font-size: 14px;
+    margin-left: 0.875rem; /* 14px */
+    font-size: 0.875rem; /* 14px */
   }
 
   .konten {
-    margin-left: 0; /* use full width on small screens */
+    margin-left: 0;
     padding: 0 5%;
-    gap: 28px;
+    gap: 1.75rem; /* 28px */
   }
 
   .hero {
@@ -287,23 +284,23 @@ footer hr {
   }
 
   .hero h2 {
-    font-size: 32px;
+    font-size: 2rem; /* 32px */
   }
 
   .instrument-container {
     justify-content: center;
-    gap: 8px;
+    gap: 0.5rem; /* 8px */
   }
 
   .instrument-container .chip {
-    padding: 6px 12px;
-    font-size: 13px;
+    padding: 0.375rem 0.75rem; /* 6px 12px */
+    font-size: 0.8125rem; /* 13px */
   }
 
   .galeri-karawitan ul {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem; /* 16px */
   }
 
   .galeri-karawitan .gambar1 img,
@@ -314,26 +311,27 @@ footer hr {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 30rem) {
+  /* 480px breakpoint - mobile */
   header {
-    padding: 10px 12px;
+    padding: 0.625rem 0.75rem; /* 10px 12px */
   }
 
   .hero h2 {
-    font-size: 24px;
+    font-size: 1.5rem; /* 24px */
   }
 
   .konten {
     padding: 0 4%;
-    gap: 20px;
+    gap: 1.25rem; /* 20px */
   }
 
   .instrument-container {
-    gap: 8px;
+    gap: 0.5rem; /* 8px */
   }
 
   .chip {
-    padding: 6px 10px;
-    font-size: 13px;
+    padding: 0.375rem 0.625rem; /* 6px 10px */
+    font-size: 0.8125rem; /* 13px */
   }
 }
