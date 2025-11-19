@@ -98,11 +98,11 @@
   }
 
   .nama h1 {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
 
   .nama h3 {
-    font-size: 1rem;
+    font-size: 16px;
   }
 
   .nama hr {
@@ -118,11 +118,11 @@
   }
 
   .konten h2 {
-    font-size: 1.3rem;
+    font-size: 21px;
   }
 
   .konten p {
-    font-size: 0.95rem;
+    font-size: 15px;
   }
 
   .instrumen-container {
@@ -130,7 +130,7 @@
   }
 
   .chip {
-    font-size: 0.9rem;
+    font-size: 14px;
     padding-left: 12px;
     padding-right: 12px;
   }

@@ -29,11 +29,11 @@ body {
 }
 
 .nama h1 {
-  font-size: 2.5rem;
+  font-size: 40px;
 }
 
 .nama h3 {
-  font-size: 1.2rem;
+  font-size: 19px;
   margin-top: 10px;
 }
 
@@ -51,12 +51,12 @@ body {
 }
 
 .konten h2 {
-  font-size: 1.8rem;
+  font-size: 29px;
   margin-bottom: 15px;
 }
 
 .konten p {
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.8;
 }
 
@@ -73,7 +73,7 @@ body {
 
 .tengah h1 {
   margin-bottom: 20px;
-  font-size: 2rem;
+  font-size: 32px;
 }
 
 .tentang-angklung {
@@ -175,19 +175,19 @@ body {
   }
 
   .nama h1 {
-    font-size: 2rem;
+    font-size: 32px;
   }
 
   .nama h3 {
-    font-size: 1.1rem;
+    font-size: 18px;
   }
 
   .konten h2 {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
 
   .tengah h1 {
-    font-size: 1.7rem;
+    font-size: 27px;
   }
 
   .tentang-angklung ul {
@@ -219,27 +219,27 @@ body {
 /* Mobile */
 @media (max-width: 600px) {
   .nama h1 {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
 
   .nama h3 {
-    font-size: 0.9rem;
+    font-size: 14px;
   }
 
   .konten h2 {
-    font-size: 1.2rem;
+    font-size: 19px;
   }
 
   .konten p {
-    font-size: 0.9rem;
+    font-size: 14px;
   }
 
   .tengah h1 {
-    font-size: 1.3rem;
+    font-size: 21px;
   }
 
   .suara-angklung h1 {
-    font-size: 1.2rem;
+    font-size: 19px;
   }
 
   .video-angklung video {
