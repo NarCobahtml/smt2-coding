@@ -87,6 +87,8 @@ nav ul li a {
   max-width: 700px;
   margin: 0 auto 40px;
 }
+
+/*Isi*/
 .container {
   max-width: 900px;
   margin: 40px auto;
@@ -106,8 +108,13 @@ nav ul li a {
   align-items: center;
   overflow: hidden;
   padding: 20px;
+  cursor: pointer;
 }
 
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
 .card img {
   width: 40%;
   height: 200px;
@@ -161,6 +168,11 @@ nav ul li a {
   color: #f8f8f8;
 }
 
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* CTA Section */
 .cta {
   background-color: #543a14;
   color: #f8f8f8;
@@ -174,6 +186,7 @@ nav ul li a {
 
 .cta h3 {
   margin-bottom: 8px;
+  text-decoration: none;
 }
 
 .cta button {
@@ -189,108 +202,6 @@ nav ul li a {
 
 .cta button:hover {
   background-color: #f59e0b;
-}
-
-.footer {
-  background-color: #543a14;
-  color: #f8f8f8;
-  padding: 50px 10%;
-  font-family: "Poppins", sans-serif;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-.footer-section {
-  flex: 1 1 250px;
-}
-
-.footer .logo {
-  display: flex;
-  align-items: center;
-  font-size: 1.5rem;
-  color: white;
-  margin-bottom: 10px;
-}
-
-.footer .logo img {
-  width: 28px;
-  margin-right: 10px;
-}
-
-.footer p {
-  font-size: 0.9rem;
-  line-height: 1.6;
-  color: #e5e5e5;
-  max-width: 320px;
-}
-
-.footer-section.nav h3 {
-  font-weight: 600;
-  color: white;
-  margin-bottom: 10px;
-}
-
-.footer-section.nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  row-gap: 1px;
-  margin-bottom: 20px;
-}
-
-.footer-section.nav li {
-  margin-bottom: 8px;
-}
-
-.footer-section.nav a {
-  color: #f8f8f8;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.footer-section.social h3 {
-  font-weight: 600;
-  color: white;
-  margin-bottom: 10px;
-}
-
-.footer-section.social .icons a {
-  color: #f8f8f8;
-  margin-right: 15px;
-  font-size: 1.3rem;
-  transition: color 0.3s;
-}
-
-.footer-bottom {
-  text-align: center;
-  font-size: 0.85rem;
-  color: #f3f3f3;
-  margin-top: 20px;
-  width: 100%;
-}
-
-.footer-bottom p {
-  max-width: none;
-  text-align: center;
-  margin: 0 auto;
-}
-
-footer hr {
-  border: none;
-  border-top: 1px solid #e5e5e5;
-  margin: 20px auto;
-  width: 90%;
-}
-
-.footer-bottom .heart {
-  color: #ef4444;
-  text-align: center;
 }
 
 .coklat {
@@ -311,6 +222,8 @@ footer hr {
     width: 100%;
   }
 }
+
+/* Responsive */
 @media (max-width: 1200px) {
   header {
     padding: 18px 36px;
