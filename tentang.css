@@ -120,7 +120,7 @@ body {
   color: #543a14;
 }
 
-/* TABLET - Max 1024px */
+/* TABLET */
 @media (max-width: 1024px) {
   .hero h2 {
     font-size: 36px;
@@ -159,7 +159,7 @@ body {
   }
 }
 
-/* MOBILE - Max 600px */
+/* MOBILE */
 @media (max-width: 600px) {
   .hero {
     height: 40vh;
