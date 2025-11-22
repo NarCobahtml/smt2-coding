@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "Coolvetica";
+  src: url("coolvetica/Coolvetica\ Rg.otf") format("opentype");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,43 +17,57 @@ body {
   line-height: 1.6;
 }
 
+/* Navbar */
+
 header {
   background: #f8f8f8;
-  color: #131010;
+  color: #000000;
   padding: 20px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
-  z-index: 2001;
+  z-index: 1000;
 }
 
-header h1 {
-  font-size: 16px;
-}
-ul {
-  list-style: none;
+.logo-text {
   display: flex;
   align-items: center;
+  gap: 25px;
 }
+
+.logo-text img {
+  width: 20px;
+  height: auto;
+}
+
+.logo-text h1 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
 nav ul {
   display: flex;
   list-style: none;
-}
-
-.logo-navbar {
-  gap: 10px;
+  gap: 50px;
 }
 
 nav ul li {
-  margin-left: 55px;
+  margin-left: 20px;
 }
+
 nav ul li a {
-  color: #131010;
+  color: #000000;
   text-decoration: none;
   transition: 0.3s;
 }
+
+nav ul li a:hover {
+  color: #38bdf8;
+}
+
+/* Hero */
 
 .hero {
   height: 90vh;
@@ -97,168 +118,17 @@ nav ul li a {
   height: 90vh;
 }
 
-.landing-page {
-  position: relative;
-  margin-top: 70px;
-  width: 1040px;
-  height: 1000px;
-  margin-left: 120px;
-  z-index: 1000;
-  top: 0;
-}
+/* Section */
 
-.landing-page .populer-minggu-ini {
-  position: absolute;
-  top: -50px;
-  left: 0;
-  width: 100%;
-  text-align: left;
-  font-size: 32px;
-  font-weight: bold;
-  z-index: 200;
-}
-
-.landing-page .angklung {
-  background-color: transparent;
-  height: 505px;
-  left: 0px;
-  position: relative;
-  top: 0px;
-  width: 347px;
-  filter: grayscale(100%);
-  transition: 0.5s;
-}
-
-.landing-page .angklung:hover {
-  filter: grayscale(0%);
-}
-
-.landing-page .rebab {
-  background-color: transparent;
-  border-radius: 10px;
-  height: 240px;
-  left: 372px;
-  position: absolute;
-  top: 0px;
-  width: 325px;
-  filter: grayscale(100%);
-  transition: 0.5s;
-  z-index: 1;
-}
-.landing-page .rebab:hover {
-  filter: grayscale(0%);
-}
-
-.landing-page .gamelan {
-  background-color: transparent;
-  height: 240px;
-  left: 722px;
-  position: absolute;
-  top: 0px;
-  width: 325px;
-  filter: grayscale(100%);
-  transition: 0.5s;
-}
-.landing-page .gamelan:hover {
-  filter: grayscale(0%);
-}
-
-.landing-page .tifa {
-  background-color: transparent;
-  height: 240px;
-  left: 372px;
-  position: absolute;
-  top: 265px;
-  width: 675px;
-  filter: grayscale(100%);
-  transition: 0.5s;
-}
-.landing-page .tifa:hover {
-  filter: grayscale(0%);
-}
-
-.landing-page .kolintang {
-  background-color: transparent;
-  height: 441px;
-  left: 0px;
-  position: absolute;
-  top: 525px;
-  width: 516px;
-  transition: 0.5s;
-  filter: grayscale(100%);
-  transition: 0.5s;
-}
-.landing-page .kolintang:hover {
-  filter: grayscale(0%);
-}
-
-.landing-page .sape {
-  background-color: transparent;
-  height: 208px;
-  left: 541px;
-  position: absolute;
-  top: 525px;
-  width: 507px;
-  filter: grayscale(100%);
-  transition: 0.5s;
-}
-.landing-page .sape:hover {
-  filter: grayscale(0%);
-}
-
-.landing-page .gambus {
-  background-color: transparent;
-  height: 208px;
-  left: 541px;
-  position: absolute;
-  top: 753px;
-  width: 507px;
-  filter: grayscale(100%);
-  transition: 0.5s;
-}
-.landing-page .gambus:hover {
-  filter: grayscale(0%);
-}
-
-.landing-page .gambar-tifa,
-.landing-page .gambar-gamelan,
-.landing-page .gambar-rebab,
-.landing-page .gambar-angklung,
-.landing-page .gambar-gambus,
-.landing-page .gambar-sape,
-.landing-page .gambar-kolintang {
-  height: 100%;
-  left: 0px;
-  object-fit: cover;
-  top: 0px;
-  width: 100%;
-  border-radius: 2%;
-}
-
-.landing-page .frame-10 {
-  background-color: transparent;
-  cursor: pointer;
-  height: 505px;
-  left: 196px;
-  position: absolute;
-  top: 1462px;
-  width: 347px;
-}
-.landing-page .gambar-gamelan {
-  cursor: pointer;
-}
-.landing-page .rebab {
-  border-radius: 10px;
-}
 .section {
-  padding: 60px 50px;
+  padding: 50px 50px 0 50px;
   text-align: center;
 }
 
 .section h3 {
   font-size: 28px;
   text-align: left;
-  margin: 25px 75px;
+  margin: auto 75px;
 }
 
 .section h4 {
@@ -270,9 +140,50 @@ nav ul li a {
   margin: 10px auto;
 }
 
+.populer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.populer-container img {
+  filter: grayscale(100%);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.populer-container img:hover {
+  filter: grayscale(0%);
+}
+
 .populer-top {
   display: flex;
-  align-items: center;
+  gap: 25px;
+}
+
+.top-right {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.populer-bottom {
+  display: flex;
+  gap: 25px;
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.bottom-right-top {
+  display: flex;
+  gap: 25px;
 }
 
 .pelajari-cards {
@@ -301,6 +212,96 @@ nav ul li a {
   text-align: left;
   margin: 10px 20px;
 }
-.coklat {
-  color: #543a14;
+
+/* Footer */
+
+footer {
+  background: #543a14;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  margin: 20px 50px;
+}
+
+.footer-top {
+  display: flex;
+  gap: 100px;
+}
+
+.footer-about {
+  text-align: left;
+  max-width: 250px;
+}
+
+.about-text {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.about-text img {
+  width: 20px;
+  height: auto;
+}
+
+.about-text h1 {
+  font-size: 20px;
+}
+
+.footer-about p {
+  margin-top: 15px;
+}
+
+.footer-navigation {
+  flex: 1;
+  text-align: left;
+  max-width: 250px;
+}
+
+.footer-navigation h1 {
+  font-size: 20px;
+}
+
+.footer-navigation ul {
+  list-style: none;
+}
+
+.footer-navigation li {
+  margin: 15px 0;
+}
+
+.footer-navigation a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-navigation a:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  flex: 1;
+  text-align: left;
+  max-width: 250px;
+}
+
+.social-icons {
+  margin: 15px auto;
+}
+
+.social-icons a {
+  margin-right: 15px;
+}
+
+.footer-bottom hr {
+  border: 1px solid #ffffff;
+  margin: 25px 0;
+}
+
+.footer-bottom p {
+  text-align: center;
 }

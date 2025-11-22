@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "Coolvetica";
+  src: url("coolvetica/Coolvetica\ Rg.otf") format("opentype");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -29,12 +36,15 @@ body {
 }
 
 .nama h1 {
-  font-size: 40px;
+  font-family: "Coolvetica", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
 }
 
 .nama h3 {
-  font-size: 19px;
-  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
 }
 
 .nama hr {
@@ -44,20 +54,26 @@ body {
 }
 
 .konten {
-  padding: 50px 10%;
+  margin-left: 170px;
+  margin-right: 170px;
+  margin-top: 68px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 60px;
 }
 
 .konten h2 {
-  font-size: 29px;
   margin-bottom: 15px;
+  font-size: 22px;
+  font-family: "Coolvetica", sans-serif;
+  font-weight: 400;
+  color: #543a14;
 }
 
 .konten p {
   font-size: 16px;
-  line-height: 1.8;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
 .gambar1,
@@ -66,14 +82,19 @@ body {
   text-align: center;
 }
 
-.tengah {
-  margin-top: 20px;
+.audio-video {
+  margin-top: 6px;
+  margin-bottom: 150px;
   text-align: center;
+  gap: 60px;
 }
 
-.tengah h1 {
-  margin-bottom: 20px;
+.audio-video h2 {
+  margin-top: 54px;
+  margin-bottom: 38px;
   font-size: 32px;
+  font-family: "Coolvetica", sans-serif;
+  font-weight: 400;
 }
 
 .tentang-angklung {

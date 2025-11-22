@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "Coolvetica";
+  src: url("coolvetica/Coolvetica%20Rg.otf") format("opentype");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,14 +12,14 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat", "Coolvetica" sans-serif;
   line-height: 1.6;
   color: #131010;
   background-color: #f8f8f8;
 }
 
 .hero {
-  height: 50vh;
+  height: 30vh;
   background: linear-gradient(to bottom, #f8f8f8, #f5e3cc);
   display: flex;
   justify-content: center;
@@ -24,8 +31,17 @@ body {
 }
 
 .hero h2 {
-  font-size: 48px;
+  font-size: 34px;
   margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #543a14;
+}
+.hero p {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #543a14;
 }
 
 .isi {
@@ -35,6 +51,17 @@ body {
 .Cerita {
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.Cerita h3 {
+  margin-bottom: 15px;
+  font-family: "Coolvetica", sans-serif;
+  font-weight: 400;
+}
+
+.Cerita p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
 .Cerita ul {
@@ -67,8 +94,11 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 25px;
-  margin: 60px auto;
+  margin-top: 32px;
+  margin-bottom: 58px;
   max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
   width: 90%;
 }
 
@@ -90,8 +120,6 @@ body {
 }
 
 .ikon {
-  background-color: #f5eee9;
-  color: #8b6b4f;
   font-size: 22px;
   width: 45px;
   height: 45px;
@@ -103,21 +131,25 @@ body {
 }
 
 .teks h3 {
-  font-size: 17px;
-  font-weight: 700;
-  margin: 0 0 8px 0;
-  color: #1a1a1a;
+  font-family: "Coolvetica", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #131010;
 }
 
 .teks p {
   font-size: 14px;
-  color: #555;
-  line-height: 1.5;
-  margin: 0;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  color: #543a14;
 }
 
-.coklat {
-  color: #543a14;
+#text {
+  text-align: center;
+  font-family: "Coolvetica", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 60px;
 }
 
 /* TABLET */
@@ -191,6 +223,15 @@ body {
 
   #horizontal img {
     max-width: 100%;
+  }
+
+  #text {
+    text-align: center;
+    font-family: "Coolvetica", sans-serif;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #543a14;
   }
 
   .daftar-fitur {

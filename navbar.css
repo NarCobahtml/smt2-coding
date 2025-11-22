@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "Coolvetica";
+  src: url("coolvetica/Coolvetica\ Rg.otf") format("opentype");
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +12,9 @@
 
 body {
   background-color: #f8f8f8;
-  font-family: Arial, sans-serif;
+  font-family: "Coolvetica", "Montserrat", sans-serif;
   line-height: 1.6;
+  letter-spacing: normal;
 }
 
 header {
@@ -24,6 +31,8 @@ header {
 
 header h1 {
   font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 ul {
@@ -62,6 +71,11 @@ nav ul li a:hover {
 
 nav ul li a.active {
   color: #543a14;
+}
+
+#navMenu {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 /* garis dibawah navbar */
@@ -108,7 +122,6 @@ nav ul::after {
   background-color: #543a14;
   color: #f8f8f8;
   padding: 50px 10%;
-  font-family: "Poppins", sans-serif;
 }
 
 .footer-container {
@@ -117,6 +130,11 @@ nav ul::after {
   flex-wrap: wrap;
   gap: 40px;
   margin-bottom: 20px;
+}
+
+.footer-container h2 {
+  font-family: "Coolvetica", sans-serif;
+  font-weight: 400;
 }
 
 .footer-section {
@@ -136,8 +154,13 @@ nav ul::after {
   margin-right: 10px;
 }
 
+.footer-section.brand {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
 .footer-section p {
-  font-size: 0.9rem;
+  font-size: 14px;
   line-height: 1.6;
   color: #e5e5e5;
   max-width: 320px;
@@ -159,7 +182,10 @@ nav ul::after {
 }
 
 .footer-section.nav li {
+  font-size: 16px;
   margin-bottom: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 .footer-section.nav a {
@@ -184,6 +210,9 @@ nav ul::after {
 .footer-bottom {
   text-align: center;
   padding: 0 20px;
+  font-family: "Coolvetica", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .footer-bottom p {
@@ -276,7 +305,6 @@ footer hr {
     width: 100%;
   }
 
-  /* Sembunyikan garis bawah di mobile */
   nav ul::after {
     display: none;
   }

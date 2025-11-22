@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "Coolvetica";
+  src: url("coolvetica/Coolvetica\ Rg.otf") format("opentype");
+}
+
 .hero {
   height: 50vh;
   background: url("gmbr_kontenjljh/heroKarawitan.png") center/cover no-repeat;
@@ -12,6 +19,18 @@
   margin-top: 50px;
   margin-bottom: 30px;
   text-align: center;
+}
+
+.nama h1 {
+  font-family: "Coolvetica", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.nama h3 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
 }
 
 .nama hr {
@@ -31,6 +50,16 @@
 
 .konten h2 {
   margin-bottom: 15px;
+  font-size: 22px;
+  font-family: "Coolvetica", sans-serif;
+  font-weight: 400;
+  color: #543a14;
+}
+
+.konten p {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
 .instrumen-container {
@@ -50,6 +79,9 @@
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 
 .galeri-karawitan ul {
@@ -64,13 +96,6 @@
   border-radius: 10px;
   max-width: 100%;
   height: auto;
-}
-
-.nilai-budaya {
-}
-
-.coklat {
-  color: #543a14;
 }
 
 /* Tablet */
