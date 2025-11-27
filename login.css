@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Coolvetica";
-  src: url("../swaranusa_project/assets/Coolvetica\ Rg.otf") format("opentype");
+  src: url("../assets/Coolvetica\ Rg.otf") format("opentype");
 }
 
 /* Reset dasar */
@@ -35,7 +35,7 @@ body {
 
 /* Left side */
 .left-side {
-  background: url(assets/login.png) center/cover no-repeat;
+  background: url(../assets/login.png) center/cover no-repeat;
   border-radius: 15px;
   position: relative;
   width: 50%;
