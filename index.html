@@ -14,16 +14,24 @@
         </li>
         <li><h1>SwaraNusa</h1></li>
       </ul>
-      <nav>
+
+      <!-- Hamburger -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav id="navMenu">
         <ul>
-          <li><a href="index.html">Beranda</a></li>
-          <li><a href="jelajahi.html">Jelajahi</a></li>
-          <li><a href="belajar.html">Belajar</a></li>
-          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="index.html" onclick="closeMenu()">Beranda</a></li>
+          <li><a href="jelajahi.html" onclick="closeMenu()">Jelajahi</a></li>
+          <li><a href="belajar.html" onclick="closeMenu()">Belajar</a></li>
+          <li><a href="tentang.html" onclick="closeMenu()">Tentang</a></li>
           <li>
-            <a href="profil"
-              ><img src="gmbr_gnrl/usr.png" width="20px" height="20px"
-            /></a>
+            <a href="register.html" onclick="closeMenu()" id="profileLink">
+              <img src="gmbr_gnrl/usr.png" width="20px" height="20px" />
+            </a>
           </li>
         </ul>
       </nav>
@@ -35,71 +43,103 @@
           Platform Pembelajaran seni musik tradisional yang menyediakan media
           literatur, audio, dan video.
         </p>
-        <button>Ayo Belajar!</button>
+        <a href="belajar.html"> <button>Ayo Belajar!</button></a>
       </div>
       <div class="hero-right">
-        <img src="gmbr_landingpage/Hero.png" alt="Hero image" />
+        <img src="assets/hero.png" alt="Hero image" />
       </div>
     </section>
     <section class="section" id="populer">
-      <div class="landing-page">
-        <div class="frame-landing">
-          <div class="populer-minggu-ini">Populer Minggu Ini</div>
+      <div class="populer-minggu-ini">
+        <h3>Populer Minggu Ini</h3>
+        <div class="populer-container">
+          <div class="populer-top">
+            <a href="konten_jelajahi.html">
+              <div class="img-wrapper">
+                <img
+                  src="assets/original-hero/gambar-kolintang.png"
+                  alt="Gambar Kolintang"
+                />
+                <div class="img-overlay">
+                  <h3>Kolintang</h3>
+                  <p>Sulawesi Utara</p>
+                </div>
+              </div></a
+            >
 
-          <div class="kolintang">
-            <img
-              class="gambar-kolintang"
-              src="gmbr_landingpage/Gambar Kolintang.png"
-              alt="Alat musik Kolintang"
-            />
+            <div class="top-right">
+              <a href="konten_jelajahi.html">
+                <div class="img-wrapper">
+                  <img
+                    src="assets/original-hero/gambar-sape.png"
+                    alt="Gambar Sape"
+                  />
+                  <div class="img-overlay">
+                    <h3>Sape</h3>
+                    <p>Kalimantan Timur</p>
+                  </div>
+                </div>
+              </a>
+              <a href="konten_jelajahi.html">
+                <div class="img-wrapper">
+                  <img
+                    src="assets/original-hero/gambar-gambus.png"
+                    alt="Gambar Gambus"
+                  />
+                  <div class="img-overlay">
+                    <h3>Gambus</h3>
+                    <p>Kalimantan Timur</p>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
+          <div class="populer-bottom">
+            <div class="img-wrapper">
+              <img
+                src="assets/original-hero/gambar-angklung.png"
+                alt="Gambar Angklung"
+              />
+              <div class="img-overlay">
+                <h3>Angklung</h3>
+                <p>Jawa Barat</p>
+              </div>
+            </div>
 
-          <div class="sape">
-            <img
-              class="gambar-sape"
-              src="gmbr_landingpage/Gambar Sape.png"
-              alt="Alat musik Sape"
-            />
-          </div>
-
-          <div class="gambus">
-            <img
-              class="gambar-gambus"
-              src="gmbr_landingpage/Gambar Gambus.png"
-              alt="Alat musik Gambus"
-            />
-          </div>
-
-          <div class="angklung">
-            <img
-              class="gambar-angklung"
-              src="gmbr_landingpage/Gambar Angklung.png"
-              alt="Alat musik Angklung"
-            />
-          </div>
-
-          <div class="rebab">
-            <img
-              class="gambar-rebab"
-              src="gmbr_landingpage/Gambar Rebab.png"
-              alt="Alat musik Rebab"
-            />
-          </div>
-
-          <div class="gamelan">
-            <img
-              class="gambar-gamelan"
-              src="gmbr_landingpage/Gambar Gamelan.png"
-              alt="Alat musik Gamelan"
-            />
-          </div>
-
-          <div class="tifa">
-            <img
-              class="gambar-tifa"
-              src="gmbr_landingpage/Gambar Tifa.png"
-              alt="Alat musik Tifa"
-            />
+            <div class="bottom-container">
+              <div class="bottom-right-top">
+                <div class="img-wrapper">
+                  <img
+                    src="assets/original-hero/gambar-rebab.png"
+                    alt="Gambar Rebab"
+                  />
+                  <div class="img-overlay">
+                    <h3>Rebab</h3>
+                    <p>Jawa Barat</p>
+                  </div>
+                </div>
+                <div class="img-wrapper">
+                  <img
+                    src="assets/original-hero/gambar-gamelan.png"
+                    alt="Gambar Gamelan"
+                  />
+                  <div class="img-overlay">
+                    <h3>Gamelan</h3>
+                    <p>Jawa Tengah</p>
+                  </div>
+                </div>
+              </div>
+              <div class="img-wrapper">
+                <img
+                  src="assets/original-hero/gambar-tifa.png"
+                  alt="Gambar Tifa"
+                />
+                <div class="img-overlay">
+                  <h3>Tifa</h3>
+                  <p>Papua</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -109,29 +149,21 @@
       <div class="pelajari-cards">
         <div class="pelajari-card">
           <div class="pelajari-left">
-            <img
-              src="gmbr_landingpage/Gambar Sasando.png"
-              alt="Sasando image"
-            />
+            <img src="assets/sasando.png" alt="Sasando image" />
           </div>
           <div class="pelajari-right">
             <h4>Sasando</h4>
             <p>Alat musik tradisional NTT - 2 hari lalu</p>
             <p>
-              Koleksi lengkap Sasando berasal dari Pulau Rote, Nusa Tenggara
-              Timur yang memiliki suara khas. Alat musik ini memiliki bentuk
-              unik yang dimainkan dengan cara dipetik dan berasal dari NTT.an
-              yang berisi berbagai instrumen seperti gong, bonang, saron, dan
-              kendang.
+              Sasando berasal dari Pulau Rote, Nusa Tenggara Timur yang memiliki
+              suara khas. Alat musik ini memiliki bentuk unik yang dimainkan
+              dengan cara dipetik dan berasal dari NTT.
             </p>
           </div>
         </div>
         <div class="pelajari-card">
           <div class="pelajari-left">
-            <img
-              src="gmbr_landingpage/Gambar Gendang.png"
-              alt="Gendang image"
-            />
+            <img src="assets/gendang.png" alt="Gendang image" />
           </div>
           <div class="pelajari-right">
             <h4>Gendang</h4>
@@ -139,13 +171,13 @@
             <p>
               Gendang adalah alat musik yang terbuat dari kayu berongga dengan
               bagian rongga yang ditutup kulit dan digunakan dalam ansambel.
-              Gendang berasal dari Jawa Barat
+              Gendang merupakan alat musik yang berasal dari Jawa Barat.
             </p>
           </div>
         </div>
         <div class="pelajari-card">
           <div class="pelajari-left">
-            <img src="gmbr_landingpage/Gambar Kecapi.png" alt="Kecapi image" />
+            <img src="assets/kecapi.png" alt="Kecapi image" />
           </div>
           <div class="pelajari-right">
             <h4>Kecapi</h4>
@@ -153,7 +185,7 @@
             <p>
               Kecapi merupakan alat musik yang dimainkan dengan cara dipetik,
               biasanya digunakan dalam pertunjukan musik dan upacara adat. Alat
-              musik ini berasal dari Jawa Barat
+              musik ini berasal dari Jawa Barat.
             </p>
           </div>
         </div>
@@ -163,7 +195,7 @@
       <div class="footer-container">
         <div class="footer-section brand">
           <h2 class="logo">
-            <img src="gmbr_gnrl/logoputih.svg" />
+            <img src="assets/logo_white.png" />
             SwaraNusa
           </h2>
           <p>
@@ -174,26 +206,26 @@
         </div>
 
         <div class="footer-section nav">
-          <h3>Navigasi</h3>
+          <h2>Navigasi</h2>
           <ul>
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="jelajahi.html">Jelajahi</a></li>
-            <li><a href="belajar.html">Belajar</a></li>
-            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Jelajahi</a></li>
+            <li><a href="#">Belajar</a></li>
+            <li><a href="#">Kontak</a></li>
           </ul>
         </div>
 
         <div class="footer-section social">
-          <h3>Ikuti Kami</h3>
+          <h2>Ikuti Kami</h2>
           <div class="icons">
             <a href="https://www.facebook.com/"
-              ><img src="gmbr_gnrl/fb.svg" alt="Facebook"
+              ><img src="assets/facebook_white.png" alt="Facebook"
             /></a>
             <a href="https://twitter.com/"
-              ><img src="gmbr_gnrl/twt.svg" alt="Twitter"
+              ><img src="assets/twitter_white.png" alt="Twitter"
             /></a>
             <a href="https://www.instagram.com/"
-              ><img src="gmbr_gnrl/ig.svg" alt="Instagram"
+              ><img src="assets/instagram_white.png" alt="Instagram"
             /></a>
           </div>
         </div>
@@ -208,5 +240,6 @@
         </p>
       </div>
     </footer>
+    <script src="burger.js"></script>
   </body>
 </html>

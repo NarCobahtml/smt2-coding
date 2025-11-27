@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Coolvetica";
-  src: url("assets/Coolvetica Rg.otf") format("opentype");
+  src: url("../swaranusa_project/assets/Coolvetica\ Rg.otf") format("opentype");
 }
 
 /* Reset dasar */
@@ -35,7 +35,7 @@ body {
 
 /* Left side */
 .left-side {
-  background: url(gmbr_lupapw/Gambar.png) center/cover no-repeat;
+  background: url(assets/login.png) center/cover no-repeat;
   border-radius: 15px;
   position: relative;
   width: 50%;
@@ -60,14 +60,23 @@ body {
   gap: 10px;
   color: #ffffff;
   font-weight: bold;
-  padding: 5px 15px;
+  padding: 5px 0;
+}
+
+.logo p {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
 .overlay button {
   background-color: rgba(255, 255, 255, 0.5);
   border: none;
   border-radius: 15px;
-  margin-top: 5px;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin: 10px 0;
   padding: 5px 15px;
   cursor: pointer;
 }
@@ -85,23 +94,18 @@ body {
 }
 
 .right-side h1 {
-  margin-bottom: 10px;
-  font-family: "Montserrat", sans-serif;
   font-size: 40px;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .right-side p {
   color: #555;
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   margin-bottom: 25px;
-}
-
-.right-side label {
-  font-size: 14px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
 }
 
 .right-side a {
@@ -122,11 +126,25 @@ form input {
   font-size: 16px;
   width: 100%;
   padding: 15px;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
-.submit {
+.right-side form a {
+  display: block;
+  color: #555;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 5px 0;
+}
+
+.right-side form a:hover {
+  text-decoration: underline;
+}
+
+.submit-button {
   color: #ffffff;
   background-color: #a77944;
   border: 1px solid #000000;
@@ -143,39 +161,90 @@ form input {
   background-color: #8b581e;
 }
 
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  opacity: 60%;
+  font-size: 16px;
+}
+
+.divider hr {
+  flex: 1;
+  border: 1px solid #000000 60%;
+}
+
+.divider p {
+  color: #000000;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0 10px;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-buttons button {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #000000;
+  background-color: #f0bb78;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-buttons button:hover {
+  background-color: #e0a64d;
+}
+
+.social-buttons img {
+  width: 20px;
+  height: 20px;
+}
+
 /* Desktop (min-width: 1024px) */
 @media (min-width: 1024px) {
 }
 
 /* Tablet (max-width: 1024px) */
 @media (max-width: 1024px) {
-  .container {
-    flex-direction: column;
+  body {
     height: auto;
-    padding: 20px;
+    min-height: 100vh;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
     width: 95vw;
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
+    margin: auto;
   }
 
   .left-side {
     width: 100%;
-    height: 250px;
-    border-radius: 10px;
-  }
-
-  .overlay {
-    padding: 10px 15px;
+    height: 260px;
+    border-radius: 12px;
   }
 
   .right-side {
     width: 100%;
     margin-left: 0;
-    padding: 25px 30px;
-  }
-
-  form input,
-  .submit-button {
-    font-size: 14px;
-    padding: 12px;
+    padding: 30px 20px;
   }
 }
 
@@ -195,18 +264,14 @@ form input {
     height: auto;
     flex-direction: column;
     padding: 15px;
-    margin: auto;
   }
 
   .left-side {
     width: 100%;
     height: 180px;
     border-radius: 10px;
-    background: url(assets/login.png) center/cover no-repeat;
-  }
-
-  .overlay {
-    padding: 10px;
+    background: url(../swaranusa_project/assets/login.png) center/cover
+      no-repeat;
   }
 
   .right-side {
@@ -216,7 +281,8 @@ form input {
   }
 
   form input,
-  .submit-button {
+  .submit-button,
+  .social-buttons button {
     padding: 12px;
     font-size: 15px;
   }

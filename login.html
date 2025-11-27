@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | SwaraNusa</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Left side -->
+      <div class="left-side">
+        <div class="overlay">
+          <div class="logo">
+            <img src="assets/logo_white.png" alt="SwaraNusa Logo" />
+            <p>SwaraNusa</p>
+          </div>
+          <button><a href="index.html">Kembali ke website</a></button>
+        </div>
+      </div>
+
+      <!-- Right side -->
+      <div class="right-side">
+        <h1>Login</h1>
+        <p>Belum punya akun? <a href="register.html">Register</a></p>
+        <form>
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+
+          <a href="lupapw.html">Lupa password?</a>
+
+          <button
+            type="submit"
+            class="submit-button"
+            onclick="window.location.href='index.html'"
+          >
+            Login
+          </button>
+
+          <div class="divider">
+            <hr />
+            <p>Atau lanjutkan dengan</p>
+            <hr />
+          </div>
+
+          <div class="social-buttons">
+            <button class="google-button">
+              <img src="assets/google.png" alt="Google" />
+              Google
+            </button>
+            <button class="facebook-button">
+              <img src="assets/facebook.png" alt="Facebook" />
+              Facebook
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script>
+    //  Setelah user berhasil register/login
+    document
+      .getElementById("loginButton")
+      .addEventListener("click", function () {
+        const username = document.getElementById("username").value;
+
+        // Simpan status login
+        localStorage.setItem("isLoggedIn", "true");
+        localStorage.setItem("username", username);
+
+        // Redirect ke halaman profil atau beranda
+        window.location.href = "profil.html";
+      });
+  </script>
+</html>
